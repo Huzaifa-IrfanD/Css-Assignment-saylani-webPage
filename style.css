@@ -1,0 +1,270 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+.max-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* header */
+
+.header {
+  position: sticky;
+  height: 65px;
+  box-shadow: 0px 2px 5px rgb(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+
+  top: 0;
+  z-index: 10;
+  background-color: white;
+}
+
+/* sit logo */
+.sit-logo {
+  height: 44.89px;
+  width: 160px;
+}
+
+/* navbar text */
+.nav-texts {
+  margin-right: 15px;
+  text-decoration: none;
+  color: black;
+}
+
+/* enroll btn */
+.enroll-btn {
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #2076ee;
+  height: 36px;
+  width: 141px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+/* courses svg  */
+.Courses-svg {
+  height: 12px;
+}
+
+.enroll-svg {
+  height: 12px;
+  margin-left: 3px;
+}
+
+/* building  */
+.building-pakistan {
+  position: relative;
+}
+
+.build {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  padding: 32px 0;
+}
+.build h1 {
+  font-size: 80px;
+}
+
+.h1-blue {
+  color: #2076ee;
+}
+
+.build p {
+  margin-top: 10px;
+}
+.laptop-icon {
+  position: absolute;
+  top: 80px;
+  left: 150px;
+
+  animation: moveUpDown 1s ease-in-out infinite alternate;
+}
+
+.up-arrow {
+  position: absolute;
+  right: 110px;
+  top: 80px;
+}
+
+.globe-icon {
+  position: absolute;
+  top: 300px;
+  right: 200px;
+  animation: moveUpDown 1s ease-in-out infinite alternate;
+}
+
+.down-arrow {
+  position: absolute;
+  top: 350px;
+  left: 200px;
+}
+
+.saylani-logo {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 10px;
+}
+.Enroll-btn2 {
+  padding: 10px 24px;
+  height: 48px;
+  width: 168.2px;
+  background-color: #2076ee;
+  color: white;
+  border-radius: 3.40282e38px;
+  border: none;
+  outline: none;
+}
+.explore-btn {
+  border: none;
+  outline: none;
+  height: 45.33px;
+  width: 210.33px;
+  padding: 10px 24px;
+  border-radius: 3.40282e38px;
+  background-color: transparent;
+  border: 1px solid black;
+}
+
+/* card video  */
+.card-or-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.card-or-video iframe {
+  margin-top: 45px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+}
+.img-1 {
+  margin-top: 20px;
+}
+.message-icon-svg {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #2076ee;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.message-svg {
+  width: 24px;
+  height: 24px;
+  color: white;
+}
+/* animation */
+@keyframes moveUpDown {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-8px);
+  }
+}
+.menu-btn {
+  display: none;
+}
+.menuBtn-svg {
+  height: 20px;
+  width: 20px;
+}
+/* media  for mobile */
+@media (max-width: 767px) {
+  .header .nav-texts {
+    display: none;
+  }
+  .header .enroll-btn {
+    display: none;
+  }
+  .header {
+    width: 100%;
+    /* justify-content: center; */
+    /* gap: 0px; */
+    /* padding: 0 15px; */
+  }
+  .menu-btn {
+    display: block;
+  }
+
+  .menu-btn button {
+    display: block;
+  }
+
+  .menuBtn-svg {
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+  .globe-icon,
+  .up-arrow,
+  .down-arrow,
+  .laptop-icon {
+    display: none;
+  }
+
+  .img-1,
+  .img-2 {
+    display: none;
+  }
+
+  .card-or-video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .hero-btns {
+    display: flex;
+    flex-direction: column;
+    /* gap: 150px; */
+    padding: 0 15px;
+  }
+
+  .hero-btns button {
+    width: 100%;
+  }
+
+  .build h1 {
+    font-size: 30px;
+    padding-top: 0px;
+  }
+  .build p {
+    width: 90%;
+  }
+}
